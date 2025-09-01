@@ -6,9 +6,11 @@
 [id="ob-specifying-environment-variables_{context}"]
 = Environment variables definition
 
-You can use environment variables in your `BuildRun` CR based on your needs. The following example shows how to define environment variables:
+You can use environment variables in your `BuildRun` CR based on your needs. The following sections shows how to define environment variables:
 
-.Example: Defining a `BuildRun` resource with environment variables
+== Defining a `BuildRun` resource with environment variables
+
+The following example shows how to define `BuildRun` resource with environment variables:
 [source,yaml]
 ----
 apiVersion: shipwright.io/v1beta1
@@ -25,9 +27,9 @@ spec:
       value: "<example_value_2>"
 ----
 
-The following example shows a `BuildRun` resource that uses the Kubernetes downward API to expose a pod as an environment variable:
+== Defining a `BuildRun` resource to expose a pod as an environment variable
 
-.Example: Defining a `BuildRun` resource to expose a pod as an environment variable
+The following example shows a `BuildRun` resource that uses the Kubernetes downward API to expose a pod as an environment variable:
 [source,yaml]
 ----
 apiVersion: shipwright.io/v1beta1
@@ -44,9 +46,9 @@ spec:
           fieldPath: metadata.name
 ----
 
-The following example shows a `BuildRun` resource that uses the Kubernetes downward API to expose a container as an environment variable:
+== Defining a `BuildRun` resource to expose a container as an environment variable
 
-.Example: Defining a `BuildRun` resource to expose a container as an environment variable
+The following example shows a `BuildRun` resource that uses the Kubernetes downward API to expose a container as an environment variable:
 [source,yaml]
 ----
 apiVersion: shipwright.io/v1beta1
