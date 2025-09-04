@@ -8,7 +8,7 @@
 
 The following examples show how to define parameters in a build strategy and assign values to those parameters by using a `Build` custom resource (CR). You can also assign a value to a parameter of the type `array` in your `Build` CR.
 
-*Defining parameters in a `ClusterBuildStrategy` custom resource*
+_Example: Defining parameters in a `ClusterBuildStrategy` custom resource_
 
 The following example shows a `ClusterBuildStrategy` CR that defines several parameters:
 
@@ -34,7 +34,7 @@ steps:
 # ...
 ----
 
-*Assigning values to parameters in a `Build` custom resource*
+_Example: Assigning values to parameters in a `Build` custom resource_
 
 The above `ClusterBuildStrategy` CR defines a `storage-driver` parameter and you can specify the value of the `storage-driver` parameter in your `Build` CR, as shown in the following example:
 
@@ -56,7 +56,8 @@ spec:
   # ...
 ----
 
-*Creating a `ConfigMap` to control a parameter centrally*
+_Example: Creating a `ConfigMap` CR to control a parameter centrally_
+
 If you want to use the `storage-driver` parameter for multiple builds and control its usage centrally, then you can create a `ConfigMap` CR, as shown in the following example:
 
 [source,yaml]
@@ -92,7 +93,7 @@ spec:
   # ...
 ----
 
-*Assigning value to a parameter of the type `array` in a `Build` CR*
+_Example: Assigning value to a parameter of the type `array` in a `Build` CR_
 
 You can assign value to a parameter of the type `array`. If you use the `buildah` strategy, you can define a `registries-search` parameter to search images in specific registries. The following example shows how you can assign a value to the `registries-search` array parameter:
 
@@ -119,7 +120,7 @@ spec:
   # ...
 ----
 
-*Referencing a secret in a `Build` CR*
+_Example: Referencing a secret in a `Build` CR_
 
 You can reference a secret for a `registries-block` array parameter, as shown in the following example:
 

@@ -23,6 +23,7 @@ Using `oc` CLI
 ----
 $ oc delete builds.shipwright.io <build_resource_name>
 ----
+
 +
 Using `shp` CLI
 +
@@ -30,7 +31,7 @@ Using `shp` CLI
 ----
 $ shp build delete <build_resource_name>
 ----
-+
+
 . Delete a `BuildRun` resource by using one of the CLIs:
 +
 Using `oc` CLI
@@ -39,6 +40,7 @@ Using `oc` CLI
 ----
 $ oc delete buildrun <buildrun_resource_name>
 ----
+
 +
 Using `shp` CLI
 +
@@ -46,7 +48,7 @@ Using `shp` CLI
 ----
 $ shp buildrun delete <buildrun_resource_name>
 ----
-+
+
 . Delete a `BuildRun` resource used by buildpacks by running the following command:
 +
 Using `oc` CLI
@@ -55,6 +57,7 @@ Using `oc` CLI
 ----
 $ oc delete buildrun <buildpacks_buildrun_resource_name>
 ----
+
 +
 Using `shp` CLI
 +
@@ -62,7 +65,7 @@ Using `shp` CLI
 ----
 $ shp delete buildrun <buildpacks_buildrun_resource_name>
 ----
-+
+
 . Delete a `BuildStrategy` resource by running the following command:
 +
 Using `oc` CLI
