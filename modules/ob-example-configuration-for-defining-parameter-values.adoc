@@ -8,7 +8,7 @@
 
 The following examples show how to define parameters in a build strategy and assign values to those parameters by using a `Build` custom resource (CR). You can also assign a value to a parameter of the type `array` in your `Build` CR.
 
-_Example: Defining parameters in a `ClusterBuildStrategy` custom resource_
+_Example: Defining parameters in a `ClusterBuildStrategy` CR_
 
 The following example shows a `ClusterBuildStrategy` CR that defines several parameters:
 
@@ -34,7 +34,7 @@ steps:
 # ...
 ----
 
-_Example: Assigning values to parameters in a `Build` custom resource_
+_Example: Assigning values to parameters in a `Build` CR_
 
 The above `ClusterBuildStrategy` CR defines a `storage-driver` parameter and you can specify the value of the `storage-driver` parameter in your `Build` CR, as shown in the following example:
 
