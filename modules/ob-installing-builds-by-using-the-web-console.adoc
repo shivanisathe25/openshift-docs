@@ -6,7 +6,8 @@
 [id="installing-builds-by-using-the-web-console_{context}"]
 = Installing {builds-shortname} by using the web console
 
-You can install the {builds-operator} from the OperatorHub by using the {ocp-product-title} web console. Installing this Operator enables you to install and use build components.
+[role="_abstract"]
+You can install the {builds-operator} from the OperatorHub by using the {builds-title} web console. Installing this Operator enables you to install and use build components.
 
 .Procedure
 . In the *Administrator* perspective of the web console, navigate to the *Operators* -> *OperatorHub* page.
