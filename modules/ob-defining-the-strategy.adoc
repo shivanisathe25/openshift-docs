@@ -13,7 +13,6 @@ You can configure the strategy for a build in the `Build` CR. The following buil
 * `source-to-image`
 
 To configure a build strategy, define the `spec.strategy.name` and `spec.strategy.kind` fields in the `Build` CR, as shown in the following example:
-
 [source,yaml]
 ----
 apiVersion: shipwright.io/v1beta1
