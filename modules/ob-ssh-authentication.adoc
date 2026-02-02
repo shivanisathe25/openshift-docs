@@ -8,7 +8,7 @@
 = SSH authentication
 
 [role="_abstract"]
-With Secure Shell (SSH) authentication, you must configure Tekton annotations to specify the hostname of the Git repository provider. For example, use `github.com` for GitHub or `gitlab.com` for GitLab.
+With Secure Shell (SSH) authentication, configure Tekton annotations to specify the hostname of the Git repository provider. For example, use `github.com` for GitHub or `gitlab.com` for GitLab.
 
 The following example shows a Kubernetes Secret configured for SSH authentication to a Git repository:
 
